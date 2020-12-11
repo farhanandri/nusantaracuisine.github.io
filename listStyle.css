@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    min-height: 1000px;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #e4e4e4;
+}
+
+header.sticky {
+    background: #151515;
+    padding: 10px 100px;
+    box-shadow:  0 5px 20px rgba(0, 0, 0, .05);
+}
+
+header .logo {
+    color: #151515;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #fff;
+}
+
+header .logo span {
+    color: #ED2B33;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+    font-size: large;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #151515;
+    font-size: large;
+}
+
+header.sticky .navigation li a {
+    color: #fff;
+}
+
+header .navigation li a:hover {
+    color: #ED2B33;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h3 {
+    font-weight: 300;
+}
+
+.titleText {
+    color:  #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: #ED2B33;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.list {
+    margin-top: 170px;
+}
+
+.list .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.list .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+
+.list .content .box .imgBx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.list .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.list .content .box .text h3 a {
+    text-decoration: none;
+    color: #111;
+}
+
+.list .content .box .text h3 a:hover {
+    color: #ED2B33;
+    cursor: hand;
+}
+
+.info {
+    background-image: url(img/bg.png);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info h2{
+    line-height: 200px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.info h2 span {
+    color: #ED2B33;
+    font-size: 1.5em;
+}
+
+.madeByText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.madeByText p{
+    color: #111;
+}
+
+.madeByText span{
+    color: #ED2B33;
+    font-weight: 500;
+    text-decoration: none;
+}
